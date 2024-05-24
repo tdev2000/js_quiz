@@ -13,6 +13,10 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
-// app listen
 
+
+// app listen
+app.listen(PORT, () => {
+    console.log("App is running on : " + PORT);
+})
 
